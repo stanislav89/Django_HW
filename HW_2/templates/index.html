@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div style="padding: 20px; margin:20px; background-color: fuchsia">
+        <h2>Hello! This is main html page!</h2>
+    </div>
+
+    <a href="{% url 'second' %}" style="font-size: 20px">To the /second page</a><br><br>
+    <a href="{% url 'main_article' %}" style="font-size: 20px">To the /article page</a><br><br>
+    <a href="{% url 'article' article_number %}" style="font-size: 20px">To the article random number</a>
+{% endblock %}

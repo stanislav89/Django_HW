@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div style="padding: 20px; margin:20px; background-color: #11ff00"> This is /article page!</div>
+    <a href="{% url 'index' %}" style="font-size: 22px;">To the first (main) page</a>
+{% endblock %}
+
+
+{% block some_text %}
+    <p style="font-weight: 600; margin-right: 80%; border: 5px dotted #323232">WOW! You went to the /article page!</p>
+{% endblock %}

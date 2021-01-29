@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        {{ article_number }}
+    </div>
+
+    <div>
+    {% if article_number_del == 0 %}
+        <span>ЧЕТНОЕ</span>
+    {% else %}
+        <span>НЕ ЧЕТНОЕ</span>
+    {% endif %}
+    </div>
+
+    <div>
+        {% if slug_text %}
+            {% include 'add.html' %}
+        {% endif %}
+    </div>
+
+    <br><a href="{% url 'index' %}" style="font-size: 18px">To the first (main) page</a><br>
+{% endblock %}

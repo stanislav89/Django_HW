@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div style="padding: 16px; margin:16px; background-color: #c8af00">
+        <h3>Privet! This is second page!</h3>
+        <p>(with static url main/second)</p>
+    </div>
+    <a href="{% url 'index' %}" style="font-size: 18px">To the first (main) page</a>
+{% endblock %}
+
+
+{% block some_text %}
+    <p style="margin-right: 85%; border: 5px solid #323232">Now you are on the /second page!</p>
+{% endblock %}
